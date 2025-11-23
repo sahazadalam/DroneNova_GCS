@@ -1,0 +1,38 @@
+.network-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.network-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+}
+
+.network-icon {
+  font-size: 1rem;
+}
+
+.network-info {
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .network-status {
+    gap: 10px;
+    padding: 6px 12px;
+  }
+  
+  .network-item {
+    font-size: 0.8rem;
+  }
+}

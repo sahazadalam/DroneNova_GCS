@@ -1,0 +1,1342 @@
+2025-11-22 11:16:58,120 - websockets.server - INFO - server listening on 127.0.0.1:8765
+2025-11-22 11:16:58,120 - websockets.server - INFO - server listening on [::1]:8765
+2025-11-22 11:16:58,134 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,135 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,149 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,150 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,151 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,166 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,169 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,170 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,182 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,183 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,184 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,198 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,200 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,201 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,214 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,215 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,217 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,229 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,230 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,233 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,244 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,247 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,247 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,260 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,260 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,261 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,276 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,277 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,278 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:16:58,292 - websockets.server - ERROR - opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2025-11-22 11:16:58,294 - websockets.server - INFO - connection open
+2025-11-22 11:16:58,294 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:00,059 - websockets.server - INFO - connection open
+2025-11-22 11:17:00,060 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:00,613 - websockets.server - INFO - connection open
+2025-11-22 11:17:00,613 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:01,558 - websockets.server - INFO - connection open
+2025-11-22 11:17:01,558 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:01,995 - websockets.server - INFO - connection open
+2025-11-22 11:17:01,997 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,019 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,019 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,036 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,036 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,051 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,051 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,069 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,070 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,097 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,097 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,113 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,114 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,129 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,130 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,145 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,146 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,162 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,163 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:02,222 - websockets.server - INFO - connection open
+2025-11-22 11:17:02,222 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:03,993 - websockets.server - INFO - connection open
+2025-11-22 11:17:03,994 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:04,012 - websockets.server - INFO - connection open
+2025-11-22 11:17:04,012 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:04,995 - websockets.server - INFO - connection open
+2025-11-22 11:17:04,995 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:05,983 - websockets.server - INFO - connection open
+2025-11-22 11:17:05,983 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:05,996 - websockets.server - INFO - connection open
+2025-11-22 11:17:05,997 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,012 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,013 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,028 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,028 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,043 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,044 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,059 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,060 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,076 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,076 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,091 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,091 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,108 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,108 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,125 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,125 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:06,141 - websockets.server - INFO - connection open
+2025-11-22 11:17:06,141 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:07,979 - websockets.server - INFO - connection open
+2025-11-22 11:17:07,979 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:07,993 - websockets.server - INFO - connection open
+2025-11-22 11:17:07,993 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:08,979 - websockets.server - INFO - connection open
+2025-11-22 11:17:08,979 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:09,979 - websockets.server - INFO - connection open
+2025-11-22 11:17:09,979 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:09,995 - websockets.server - INFO - connection open
+2025-11-22 11:17:09,996 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,021 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,021 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,037 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,037 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,053 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,053 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,069 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,069 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,085 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,085 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,100 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,100 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,116 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,116 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,133 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,133 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:10,147 - websockets.server - INFO - connection open
+2025-11-22 11:17:10,148 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:12,000 - websockets.server - INFO - connection open
+2025-11-22 11:17:12,000 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:12,020 - websockets.server - INFO - connection open
+2025-11-22 11:17:12,020 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:12,035 - websockets.server - INFO - connection open
+2025-11-22 11:17:12,036 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:13,987 - websockets.server - INFO - connection open
+2025-11-22 11:17:13,988 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,010 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,011 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,029 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,029 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,045 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,045 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,061 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,062 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,077 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,077 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,093 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,093 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,109 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,110 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,125 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,125 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,141 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,141 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:14,157 - websockets.server - INFO - connection open
+2025-11-22 11:17:14,158 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:15,983 - websockets.server - INFO - connection open
+2025-11-22 11:17:15,984 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:16,012 - websockets.server - INFO - connection open
+2025-11-22 11:17:16,012 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:16,029 - websockets.server - INFO - connection open
+2025-11-22 11:17:16,030 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:17,992 - websockets.server - INFO - connection open
+2025-11-22 11:17:17,993 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,010 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,011 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,026 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,026 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,042 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,042 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,144 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,144 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,169 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,170 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,181 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,182 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,200 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,200 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,216 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,216 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,232 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,232 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:18,248 - websockets.server - INFO - connection open
+2025-11-22 11:17:18,248 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:20,015 - websockets.server - INFO - connection open
+2025-11-22 11:17:20,016 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:20,034 - websockets.server - INFO - connection open
+2025-11-22 11:17:20,035 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:20,050 - websockets.server - INFO - connection open
+2025-11-22 11:17:20,051 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:21,987 - websockets.server - INFO - connection open
+2025-11-22 11:17:21,988 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,009 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,010 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,025 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,026 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,040 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,040 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,057 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,057 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,074 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,074 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,089 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,089 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,103 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,104 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,119 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,120 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,136 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,136 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:22,151 - websockets.server - INFO - connection open
+2025-11-22 11:17:22,152 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:23,981 - websockets.server - INFO - connection open
+2025-11-22 11:17:23,982 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:24,008 - websockets.server - INFO - connection open
+2025-11-22 11:17:24,009 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:24,026 - websockets.server - INFO - connection open
+2025-11-22 11:17:24,027 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:25,992 - websockets.server - INFO - connection open
+2025-11-22 11:17:25,993 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,018 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,019 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,035 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,036 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,050 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,051 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,066 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,066 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,081 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,081 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,097 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,098 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,114 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,114 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,130 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,130 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,144 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,145 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:26,160 - websockets.server - INFO - connection open
+2025-11-22 11:17:26,161 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:27,976 - websockets.server - INFO - connection open
+2025-11-22 11:17:27,977 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:27,990 - websockets.server - INFO - connection open
+2025-11-22 11:17:27,991 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:28,006 - websockets.server - INFO - connection open
+2025-11-22 11:17:28,006 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:29,986 - websockets.server - INFO - connection open
+2025-11-22 11:17:29,987 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,002 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,004 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,030 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,030 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,045 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,046 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,062 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,063 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,077 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,078 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,093 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,094 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,109 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,110 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,125 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,126 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,141 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,142 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:30,157 - websockets.server - INFO - connection open
+2025-11-22 11:17:30,157 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:31,980 - websockets.server - INFO - connection open
+2025-11-22 11:17:31,980 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:31,994 - websockets.server - INFO - connection open
+2025-11-22 11:17:31,994 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:32,010 - websockets.server - INFO - connection open
+2025-11-22 11:17:32,011 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:33,979 - websockets.server - INFO - connection open
+2025-11-22 11:17:33,981 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:33,999 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,000 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,020 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,021 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,035 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,035 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,050 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,051 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,065 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,066 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,081 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,081 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,098 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,098 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,113 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,114 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,130 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,130 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:34,145 - websockets.server - INFO - connection open
+2025-11-22 11:17:34,146 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:35,978 - websockets.server - INFO - connection open
+2025-11-22 11:17:35,979 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:35,993 - websockets.server - INFO - connection open
+2025-11-22 11:17:35,994 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'
+2025-11-22 11:17:36,011 - websockets.server - INFO - connection open
+2025-11-22 11:17:36,012 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\sahazad\OneDrive\Desktop\cloud-based Ground Control Station\drone-gcs\backend\venv\Lib\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: WebSocketServer.handle_client() missing 1 required positional argument: 'path'

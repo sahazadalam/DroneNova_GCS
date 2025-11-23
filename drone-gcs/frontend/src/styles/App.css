@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #334155;
+}
+
+.dashboard-header h1 {
+  color: #3b82f6;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-indicator.connected {
+  background: #10b981;
+  animation: pulse 2s infinite;
+}
+
+.status-indicator.disconnected {
+  background: #ef4444;
+}
+
+.status-indicator.error {
+  background: #f59e0b;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.left-panel, .right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Map Styles */
+.map-container {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.map-container h3 {
+  margin-bottom: 10px;
+  color: #e2e8f0;
+}
+
+/* Charts Styles */
+.charts-container {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.charts-container h3 {
+  margin-bottom: 15px;
+  color: #e2e8f0;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.chart {
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+}
+
+.chart h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #94a3b8;
+}
+
+/* Status Panel Styles */
+.status-panel {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.status-panel h3 {
+  margin-bottom: 15px;
+  color: #e2e8f0;
+}
+
+.status-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: #0f172a;
+  border-radius: 6px;
+  border: 1px solid #334155;
+}
+
+.status-icon {
+  font-size: 1.2em;
+}
+
+.status-label {
+  font-size: 0.8em;
+  color: #94a3b8;
+}
+
+.status-value {
+  font-weight: bold;
+  color: #e2e8f0;
+}
+
+/* Video Stream Styles */
+.video-stream {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.video-stream h3 {
+  margin-bottom: 15px;
+  color: #e2e8f0;
+}
+
+.video-container {
+  width: 100%;
+  height: 200px;
+  background: #0f172a;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #64748b;
+}
+
+.video-error {
+  background: #dc2626;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.video-controls {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-start {
+  background: #10b981;
+  color: white;
+}
+
+.btn-stop {
+  background: #ef4444;
+  color: white;
+}
+
+.video-info {
+  font-size: 0.8em;
+  color: #64748b;
+  text-align: center;
+}
+
+.video-info p {
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+}
