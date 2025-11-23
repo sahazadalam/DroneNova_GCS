@@ -184,33 +184,51 @@ Mission Control: Waypoint planning and mission execution
 
 Network Status: Connection quality and latency monitoring
 
-📁 Project Structure
-text
+
+## 🏗️ Project Structure
 DroneNova_GCS/
 ├── backend/
-│   ├── src/
-│   │   ├── mavlink/          # MAVLink protocol handlers
-│   │   ├── networking/       # ZeroTier & WebRTC integration
-│   │   ├── api/             # REST API routes
-│   │   ├── services/        # Business logic
-│   │   └── utils/           # Helper functions
-│   ├── package.json
-│   └── .env.example
+│ ├── app/
+│ │ ├── init.py
+│ │ ├── auth.py # Authentication handlers
+│ │ ├── database.py # Database configurations
+│ │ ├── fastapi_gcs.py # FastAPI GCS implementation
+│ │ ├── mavlink_handler.py # MAVLink protocol processing
+│ │ ├── network_manager.py # Network connectivity management
+│ │ ├── websocket_server.py # Real-time WebSocket server
+│ │ ├── webrtc_server.py # WebRTC streaming server
+│ │ └── working_gcs.py # Production GCS implementation
+│ ├── venv/ # Python virtual environment
+│ ├── Dockerfile # Backend containerization
+│ ├── requirements.txt # Python dependencies
+│ ├── start.sh # Startup script
+│ └── gcs.log # Application logs
 ├── frontend/
-│   ├── src/
-│   │   ├── components/      # React components
-│   │   │   ├── Dashboard/   # Main dashboard
-│   │   │   ├── Maps/        # Map components
-│   │   │   ├── Charts/      # Data visualization
-│   │   │   └── Video/       # Streaming components
-│   │   ├── pages/          # Application pages
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── utils/          # WebSocket & API helpers
-│   │   └── styles/         # CSS modules
-│   └── package.json
-├── docs/                   # Documentation
-├── tools/                  # Development tools & simulators
-└── README.md
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── Auth/ # Authentication components
+│ │ │ ├── Dashboard/ # Main dashboard layout
+│ │ │ ├── Drones/ # Drone management components
+│ │ │ ├── Map/ # Map visualization (DroneMap.js)
+│ │ │ ├── Charts/ # Data visualization (TelemetryCharts.js)
+│ │ │ ├── StatusPanel/ # Status displays (StatusPanel.js)
+│ │ │ ├── Controls/ # Control interfaces
+│ │ │ ├── Network/ # Network status components
+│ │ │ └── Video/ # Video streaming components
+│ │ ├── context/ # React context providers
+│ │ ├── styles/ # CSS and styling
+│ │ ├── App.js # Main application component
+│ │ ├── App.css # Application styles
+│ │ └── index.js # Application entry point
+│ ├── public/ # Static assets
+│ ├── node_modules/ # Frontend dependencies
+│ ├── Dockerfile # Frontend containerization
+│ ├── package.json # Node.js dependencies
+│ ├── package-lock.json # Dependency lock file
+│ └── tailwind.config.js # Tailwind CSS configuration
+├── docker-compose.yml # Multi-container orchestration
+└── README.md # Project documentation
+
 🧪 Testing & Validation
 Telemetry Simulation
 bash
