@@ -4,10 +4,10 @@
 A professional, cloud-based Ground Control Station implementing MAVLink protocol for real-time drone telemetry monitoring and fleet management.
 
 🚀 Live Demo
-🌐 DroneNova-GCS-Working-Full-Project: https://dronenova-gcs.vercel.app
+🌐 DroneNova-GCS-Working-Full-Project: https://dronenove-gcs.netlify.app/
 
 🌐 Web Dashboard (Frontend):
-https://dronenova-gcs.vercel.app
+https://dronenove-gcs.netlify.app/
 
 🛠️ API Documentation (Backend):
 https://dronenova-gcs.onrender.com/docs
